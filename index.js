@@ -6,8 +6,6 @@ function CountFunction(){
 
     //все единицы измерения в  СИ
     let t = [];
-    let A1 = [];
-    let A2 = [];
     let A_Res = [];
 
     if (w1 == w2){
@@ -34,26 +32,6 @@ function CountFunction(){
         }
     };
 
-    // let layout_2 = {
-    //     title: 'График первого колебания',
-    //     xaxis: {
-    //         title: 'Время t (c)'
-    //     },
-    //     yaxis: {
-    //         title: 'U, B'
-    //     }
-    // };
-    //
-    // let layout_3 = {
-    //     title: 'График второго колебания',
-    //     xaxis: {
-    //         title: 'Время t (c)'
-    //     },
-    //     yaxis: {
-    //         title: 'U, B'
-    //     }
-    // };
-
     Plotly.newPlot(
         "myDiv_1",
         [{
@@ -64,28 +42,6 @@ function CountFunction(){
         }],
         layout_1
     );
-
-    // Plotly.newPlot(
-    //     "myDiv_2",
-    //     [{
-    //         mode: 'lines',
-    //         type: 'scatter',
-    //         x: t,
-    //         y: A2
-    //     }],
-    //     layout_2
-    // );
-    //
-    // Plotly.newPlot(
-    //     "myDiv_3",
-    //     [{
-    //         mode: 'lines',
-    //         type: 'scatter',
-    //         x: t,
-    //         y: A_Res
-    //     }],
-    //     layout_3
-    // );
 
     return false;
 }
